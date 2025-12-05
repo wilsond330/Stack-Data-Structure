@@ -9,7 +9,7 @@ public class Stack<stackType>
 	private int MAX_LENGTH;
 	public Stack(int maxLength)
 	{
-		this.top = 0;
+		this.top = -1;
 		this.MAX_LENGTH = maxLength;
 		this.stack = new stackType[MAX_LENGTH];
 		this.isEmpty = true;
@@ -24,7 +24,7 @@ public class Stack<stackType>
 			isFull = false;
 			output = stack[top];
 			top--;
-			if (top == 0)
+			if (top == -1)
 			{
 				isEmpty = true;
 			}
